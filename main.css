@@ -1,0 +1,81 @@
+
+
+
+/* body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 16/10;
+    background: #000000;  
+    color: #fff;
+}
+ */
+.glowing
+{
+	color: #fff;
+    text-align:center;
+	display:inline-block;
+    justify-content: center;
+	align-items: center;
+	width: 50px;
+    line-height: 40px;
+    font-size: 28px;
+    text-align: center;
+    border: 2px solid rgba(255,255,255,0.4);
+    margin: 0 -1px;
+    text-transform: uppercase;
+    animation: animate 2s linear infinite;
+}
+
+@keyframes animate
+{
+    0%{
+        color: #fbd607;
+        box-shadow: 0 4px 15px rgb(235, 231, 8);
+        border: 2px solid rgb(235, 231, 8);
+    }
+    33.3%{
+        color: #e93b2e;
+        box-shadow: 0 4px 15px rgb(235, 34, 8);
+        border: 2px solid rgb(235, 8, 8);
+    }
+    66.6%{
+        color: #07fbd2;
+        box-shadow: 0 4px 15px rgb(8, 235, 224);
+        border: 2px solid rgb(8, 235, 186);
+    }
+    100%{
+        color: #fbd607;
+        box-shadow: 0 4px 15px rgb(235, 231, 8);
+        border: 2px solid rgb(235, 231, 8);
+    }
+}
+.glowing:nth-child(1)
+{
+    animation-delay: 0s;
+}
+.glowing:nth-child(2)
+{
+    animation-delay: 0.2s;
+}
+.glowing:nth-child(3)
+{
+    animation-delay: 0.4s;
+}
+.glowing:nth-child(4)
+{
+    animation-delay: 0.6s;
+}
+.glowing:nth-child(5)
+{
+    animation-delay: 0.8s;
+}
+.glowing:nth-child(6)
+{
+    animation-delay: 1s;
+}
+  /* .glowing:nth-child(7)
+{
+    animation-delay: 1.2s;
+}   */
